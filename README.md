@@ -46,4 +46,4 @@
 <br>
 
 ## 파일 구조
-![↘︎디렉토리](<img width="702" alt="iShot_2024-02-04_02 55 17" src="https://github.com/imeline/FastCampusKDT-ToyProject2/assets/128706341/483fd199-fb81-4a4d-98e1-e1b89276a0eb">)
+![↘︎디렉토리](https://velog.velcdn.com/images/imeline/post/3f25bad1-7efd-44ad-b506-05ecb0190985/image.png)
