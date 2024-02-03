@@ -1,24 +1,55 @@
-# 토이 프로젝트2 : 여행 여정을 기록과 관리하는 SNS 서비스 2단계
+# 토이프로젝트 2단계 
+- 스프링 Legacy 기반 프로젝트 (DB 설계, DB 트랜젝션, RESTful API 설계)
 
-### 프로젝트 기간 : 1/29(월) ~ 2/2(금)
-### 과제 결과물 마감 기한 : 2/2 (금) 19:00 / LMS 제출을 기준으로 합니다.
-### 자세한 사항은 [RFP](https://drive.google.com/drive/folders/1Oo3o65oG5uVGaRy-NJ53gX7jmisT_WOQ?usp=sharing) 참고 부탁드립니다.
+<br>
 
-### 프로젝트 설명
-- [RFP](https://drive.google.com/drive/folders/1Oo3o65oG5uVGaRy-NJ53gX7jmisT_WOQ?usp=sharing)를 기반으로 팀별로 결과물을 작업하여 제출하시오. 
-- 달성 목표: Spring Legacy 기반 프로젝트, DB 설계, DB 트랜잭션, RESTful API 설계
-  - 여행의 여정 정보를 기록하고 조회하는 Spring Legacy기반 RESTful API 개발
-  - 진행한 여행, 여정 정보를 조회, 등록 수정하기 위한 ERD 설계 및 개발			
-  - 여행과 여정 정보를 조회, 등록, 수정하기 위한 RESTful API 설계/개발
-  - 진행한 여행, 여정 정보를 조회, 등록 수정 후 저장
-  - 일정 정보 중 일시(Date, Time) 정보를 생성할 수 있는 공통 유틸리티 클래스 제공
+## 프로젝트 소개
+- 여행별 여러 개의 여정을 담아 기록, 수정할 수 있도록 관리하는 스프링 기반 RESTful API <br>
 
-  
-### 프로젝트 진행 및 제출 방법
-- 기존 저장소(FastCampustKDTBackend/리포지토리)를 Fork합니다.
-- 각 조별로 개별 작업 후, 최종 완성본을 하나의 branch로 병합합니다.
-- 조별 리포지토리의 최종(main X) branch -> 기존 레포의 main branch PR상태(commit 메시지 : N조 최종 제출) 로 제출합니다.
-- main branch에 본인 branch의 commit을 merge 하지 마시길 바랍니다.
-- 담당 멘토님으로 리뷰어 설정 후 제출 바랍니다.
-- 멘토님들께서 어플리케이션 실행을 위해 확인해야 할 설정 값 등은 README.md 파일에 작성 또는 아래 LMS 제출 시에 함께 전달 부탁 드립니다.
-- PR 링크는 온라인 교육장의 <패스트캠퍼스 : 백엔드 개발 부트캠프 7기_토이 프로젝트1>을 통해 최종 제출(제출자: 조장) 부탁 드립니다.
+[↘︎명세서](https://www.notion.so/2-9661b25933204481ace02cdb37d70de8#450e3beb32874855ae65ad2c1104c8ab)
+<br>
+
+[↘︎RFP](https://docs.google.com/document/d/1RSqH9ILlEo4juLZLKocfVOdKH9eoTT5U/edit)
+
+<br>
+
+## 프로젝트 기간
+- 2024-01-29 ~ 2024-02-02
+
+<br>
+
+## 멤버 구성&역할
+이름|기능|역할
+:---:|:---:|:---:
+신종호(조장)|여정|U
+박하은|여정|R
+여관구|여정|C
+김애림|여행|C,U
+이선주|여행|R,U
+
+<br>
+
+## ⚙️ 개발 환경
+- JDK : 11
+- Database : MySQL
+
+<br>
+
+## API 명세서
+[↘︎API 명세서](https://documenter.getpostman.com/view/32623056/2s9YyvAf7C)
+
+<br>
+
+## ERD 설계도
+![↘︎ERD](https://velog.velcdn.com/images/yeokg1130/post/f0a80da5-d859-4739-b60f-a5ef91f99737/image.png)
+
+<br>
+
+## 유의사항
+- rootcontext.xml ==> username, password 사전 설정 필요
+
+<br>
+
+## 파일 구조
+![↘︎디렉토리](<img width="865" alt="image" src="https://github.com/imeline/FastCampusKDT-ToyProject2/assets/128706341/8d4aa74c-0487-47f1-a09a-1e7fe49185c5">
+)
