@@ -4,12 +4,7 @@
 <br>
 
 ## 프로젝트 소개
-- 여행별 여러 개의 여정을 담아 기록, 수정할 수 있도록 관리하는 스프링 기반 RESTful API <br>
-
-[↘︎명세서](https://www.notion.so/2-9661b25933204481ace02cdb37d70de8#450e3beb32874855ae65ad2c1104c8ab)
-<br>
-
-[↘︎RFP](https://docs.google.com/document/d/1RSqH9ILlEo4juLZLKocfVOdKH9eoTT5U/edit)
+- 여행별 여러 개의 여정을 담아 기록, 수정할 수 있도록 관리하는 스프링 기반 RESTful API 
 
 <br>
 
@@ -29,7 +24,7 @@
 
 <br>
 
-## ⚙️ 개발 환경
+## 개발 환경
 - JDK : 11
 - Database : MySQL
 
@@ -51,5 +46,4 @@
 <br>
 
 ## 파일 구조
-![↘︎디렉토리](<img width="865" alt="image" src="https://github.com/imeline/FastCampusKDT-ToyProject2/assets/128706341/8d4aa74c-0487-47f1-a09a-1e7fe49185c5">
-)
+![↘︎디렉토리](<img width="702" alt="iShot_2024-02-04_02 55 17" src="https://github.com/imeline/FastCampusKDT-ToyProject2/assets/128706341/483fd199-fb81-4a4d-98e1-e1b89276a0eb">)
