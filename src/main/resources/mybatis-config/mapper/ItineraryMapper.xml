@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.domain.itinerary.repository.ItineraryMapper">
+
+    <select id="findAllItineraries" resultType="com.travel.domain.itinerary.entity.ItineraryDTO">
+        select * from itinerary where trip_id = #{tripId}
+    </select>
+
+    <select id="findItineraryById" resultType="com.travel.domain.itinerary.entity.ItineraryDTO">
+        select * from itinerary where itinerary_id = #{itineraryId}
+    </select>
+
+    <insert id="addItinerary" parameterType="com.travel.domain.itinerary.entity.ItineraryDTO">
+        insert into itinerary (trip_id, itinerary_type, itinerary_name, departure_place, destination_place, departure_datetime, arrival_datetime, check_in, check_out) values (#{tripId}, #{itinerary.itineraryType}, #{itinerary.itineraryName}, #{itinerary.departurePlace}, #{itinerary.destinationPlace}, #{itinerary.departureDatetime}, #{itinerary.arrivalDatetime}, #{itinerary.checkIn}, #{itinerary.checkOut})
+    </insert>
+
+    <update id="editItinerary" parameterType="com.travel.domain.itinerary.entity.ItineraryDTO">
+        update itinerary set itinerary_type = #{itinerary.itineraryType}, itinerary_name = #{itinerary.itineraryName}, departure_place = #{itinerary.departurePlace}, destination_place = #{itinerary.destinationPlace}, departure_datetime = #{itinerary.departureDatetime}, arrival_datetime = #{itinerary.arrivalDatetime}, check_in = #{itinerary.checkIn}, check_out = #{itinerary.checkOut} where itinerary_id = #{itineraryId}
+    </update>
+
+</mapper>

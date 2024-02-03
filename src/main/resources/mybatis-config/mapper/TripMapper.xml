@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.travel.domain.trip.repository.TripMapper">
+
+    <select id="getTripList" resultType="com.travel.domain.trip.entity.TripDTO">
+        select trip_id, trip_name, trip_departure_date, trip_arrival_date, trip_destination, is_domestic
+        from trip
+    </select>
+
+    <select id="getByTripId" resultType="com.travel.domain.trip.entity.TripDTO" parameterType="Integer">
+        select trip_id, trip_name, trip_departure_date, trip_arrival_date, trip_destination, is_domestic
+        from trip
+        where trip_id=#{tripId}
+    </select>
+
+    <insert id="insertTrip" parameterType="com.travel.domain.trip.entity.TripDTO">
+        insert into trip(trip_name, trip_departure_date, trip_arrival_date, trip_destination, is_domestic) values(#{tripName},
+        #{tripDepartureDate}, #{tripArrivalDate}, #{tripDestination}, #{isDomestic})
+    </insert>
+
+    <update id="updateTrip" parameterType="com.travel.domain.trip.entity.TripDTO">
+        UPDATE trip
+        SET trip_name=#{trip.tripName},
+        trip_departure_date=#{trip.tripDepartureDate},
+        trip_arrival_date=#{trip.tripArrivalDate},
+        trip_destination=#{trip.tripDestination},
+        is_domestic=#{trip.isDomestic}
+        WHERE trip_id=#{tripId}
+    </update>
+
+</mapper>
